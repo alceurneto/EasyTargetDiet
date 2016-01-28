@@ -174,5 +174,12 @@
     <string name="restore">Restore</string>
     <string name="no_show_backup_last_modified">DD/mm/YYYY HH:MM:ss</string>
     <string name="delete_backup_file_msg">Delete backup file %1$s?</string>
+    <string name="incoming_request">Incoming Request</string>
+    <string name="no_show_incoming_intent">Incoming intent details here</string>
+    <string name="addAll">Add All</string>
+    <string name="addAllButton">ADD ALL</string>
+    <string name="request_info">REQUEST INFO</string>
+    <string name="request_to_add">We are requested to add:</string>
+    <string name="no_show_receiver_entries">NN [type] entries</string>
 
 </resources>

@@ -1,0 +1,13 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.arndroid.etdiet.intentreceiver.IntentReceiverActivity">
+
+    <item
+        android:id="@+id/addAll"
+        android:title="@string/addAll"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

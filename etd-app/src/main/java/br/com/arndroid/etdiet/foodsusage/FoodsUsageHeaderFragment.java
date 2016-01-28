@@ -12,7 +12,6 @@ import android.widget.TextView;
 import br.com.arndroid.etdapi.data.Meal;
 import br.com.arndroid.etdiet.R;
 import br.com.arndroid.etdiet.dialog.MealIdealValuesDialog;
-import br.com.arndroid.etdiet.meals.Meals;
 import br.com.arndroid.etdiet.provider.Contract;
 import br.com.arndroid.etdiet.provider.days.DaysEntity;
 import br.com.arndroid.etdiet.provider.days.DaysManager;
@@ -44,7 +43,7 @@ public class FoodsUsageHeaderFragment extends Fragment implements MealIdealValue
     private void bindScreen(View rootView) {
         mTxtDate = (TextView) rootView.findViewById(R.id.txtDate);
         mTxtUsed = (TextView) rootView.findViewById(R.id.txtUsed);
-        mTxtGoal = (TextView) rootView.findViewById(R.id.txtGoal);
+        mTxtGoal = (TextView) rootView.findViewById(R.id.lblRequest);
     }
 
     private void setupScreen(View rootView) {

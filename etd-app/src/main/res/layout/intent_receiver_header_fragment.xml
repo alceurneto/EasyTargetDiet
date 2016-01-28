@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_after_header_divider">
+
+    <TextView
+        style="@style/CardFont.Header"
+        android:id="@+id/lblRequestInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_info" />
+
+    <View
+        style="@style/HeaderDivider"
+        android:id="@+id/divHeader"
+        android:layout_below="@id/lblRequestInfo"/>
+
+    <TextView
+        style="@style/CardFont.Data.Small"
+        android:id="@+id/lblRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divHeader"
+        android:text="@string/request_to_add" />
+
+    <TextView
+        style="@style/CardFont.Data"
+        android:id="@+id/txtReceiverEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblRequest"
+        android:text="@string/no_show_receiver_entries" />
+
+    <Button
+        style="@style/CardButton"
+        android:id="@+id/btnAddAll"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtReceiverEntries"
+        android:padding="@dimen/card_margin"
+        android:text="@string/addAllButton" />
+
+</RelativeLayout>

@@ -45,6 +45,20 @@
         </activity>
 
         <activity
+            android:name=".intentreceiver.IntentReceiverActivity"
+            android:label="@string/incoming_request"
+            android:parentActivityName=".journal.JournalActivity"
+            tools:ignore="UnusedAttribute" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.arndroid.etdiet.journal.JournalActivity" />
+            <intent-filter>
+                <action android:name="br.com.arndroid.etdapi.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".settings.SettingsMainActivity"
             android:label="@string/settings"
             android:parentActivityName=".journal.JournalActivity"

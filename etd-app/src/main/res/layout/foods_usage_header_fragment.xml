@@ -9,7 +9,7 @@
 
     <TextView
         style="@style/CardFont.Header"
-        android:id="@+id/lblMealInfo"
+        android:id="@+id/lblRequestInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/meal_info" />
@@ -17,7 +17,7 @@
     <View
         style="@style/HeaderDivider"
         android:id="@+id/divHeader"
-        android:layout_below="@id/lblMealInfo"/>
+        android:layout_below="@id/lblRequestInfo"/>
 
     <TextView
         style="@style/CardFont.Data.Large"
@@ -39,7 +39,7 @@
 
     <TextView
         style="@style/CardFont.Data.Small"
-        android:id="@+id/txtGoal"
+        android:id="@+id/lblRequest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtDate"

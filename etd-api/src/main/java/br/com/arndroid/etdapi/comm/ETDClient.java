@@ -26,7 +26,7 @@ public final class ETDClient {
     public static final int MESSAGE_ID_FOOD_USAGE_BULK_V01 = 1;
 
     // Categories:
-    public static final String CATEGORY_FOOD_USAGE = "br.com.arndroid.etdapi.comm.FOOD_USAGE";
+    public static final String ACTION_SEND = "br.com.arndroid.etdapi.action.SEND";
 
     // Extra keys:
     public static final String EXTRA_KEY_MESSAGE_ID = "br.com.arndroid.etdapi.comm.EXTRA_KEY_MESSAGE_ID";
@@ -40,8 +40,12 @@ public final class ETDClient {
         if (data == null) {
             throw new IllegalArgumentException("IntentHelper.createMessage: data cannot be null.");
         }
-        final Intent result = prepareNewIntent(Intent.ACTION_SEND, CATEGORY_FOOD_USAGE, MESSAGE_ID_FOOD_USAGE_SINGLE_V01,
-                BuildConfig.VERSION_CODE);
+        final Intent result = prepareNewIntent(
+                ACTION_SEND,
+                Intent.CATEGORY_DEFAULT,
+                MESSAGE_ID_FOOD_USAGE_SINGLE_V01,
+                BuildConfig.VERSION_CODE
+        );
         result.putExtra(EXTRA_KEY_DATA_BUNDLE, data.toBundle());
         return result;
     }
